@@ -8,12 +8,13 @@ namespace Ny_carapp
 {
     internal class Taxi : Car
     {
+        private Car Vehicle { get; set; }
         public double StartPrice { get; set; }
         public double PricePerKm { get; set; }
         public double PricePerMinute { get; set; }
         public bool MeterStarted { get; set; }
 
-        public Taxi(string brand, string model, string licensePlate, double startPrice, double pricePerKm, double pricePerMinute) : base(brand, model, licensePlate)
+        public Taxi(Car vehicle, string brand, string model, string licensePlate, double startPrice, double pricePerKm, double pricePerMinute) : base(vehicle.Brand, model, licensePlate)
         {
             StartPrice = startPrice;
             PricePerKm = pricePerKm;
@@ -60,7 +61,7 @@ namespace Ny_carapp
 
         public override bool CanDrive(double distance)
         {
-
+            return Vehicle.CanDrive(distance);
         }
     }
 }

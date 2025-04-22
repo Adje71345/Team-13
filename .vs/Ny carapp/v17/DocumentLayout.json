@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Ny carapp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C9E04D14-3078-4B76-B6F9-3213F4463121}|Ny carapp.csproj|c:\\git projekter\\projekter 1. semester\\ny carapp\\team-13\\ny carapp\\taxi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9E04D14-3078-4B76-B6F9-3213F4463121}|Ny carapp.csproj|solutionrelative:taxi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Taxi.cs",
+              "DocumentMoniker": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Ny carapp\\Taxi.cs",
+              "RelativeDocumentMoniker": "Taxi.cs",
+              "ToolTip": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Ny carapp\\Taxi.cs",
+              "RelativeToolTip": "Taxi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T10:45:09.05Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
