@@ -51,9 +51,7 @@ namespace Ny_carapp
         public abstract void Drive(double km);
 
         public abstract bool CanDrive(double km);
-        /* public abstract void UpdateEnergyLevel(double distance);
-        public abstract double CalculateConsumption(double distance);
-        */
+        
 
     }
 }

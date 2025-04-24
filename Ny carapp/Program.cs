@@ -8,6 +8,7 @@
             fuelCar.StartEngine();
             fuelCar.Refill(40);
             fuelCar.Drive(100);
+            Console.WriteLine($" Fuel level: {fuelCar.EnergyLevel:F2} Odometer: {fuelCar.Odometer}");
             fuelCar.Drive(700);
             fuelCar.StopEngine();
             Console.ReadLine();
@@ -16,6 +17,7 @@
             electricCar.StartEngine();
             electricCar.Refill(80);
             electricCar.Drive(200);
+            Console.WriteLine($" Fuel level: {electricCar.EnergyLevel:F2} Odometer: {electricCar.Odometer}");
             electricCar.Drive(400);
             electricCar.StopEngine();
             Console.ReadLine();
