@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ny_carapp
 {
-    internal class Taxi : Car
+    internal class Taxi : Car, IEnergy
     {
         
-
+        
         private IEnergy energyHandler; // komposition med IEnergy interface
 
         public double EnergyLevel => energyHandler.EnergyLevel; // getter til at få energiniveauet
@@ -21,7 +21,7 @@ namespace Ny_carapp
         public bool MeterStarted { get; set; }
         
 
-        // konstruktør tager Ienergy implementation som parameter
+        // konstruktør tager IEnergy implementation som parameter
 
         public Taxi(string brand, string model, string licensePlate,IEnergy energyHandler, double startPrice, double pricePerKm, double pricePerMinute) : base(brand, model,licensePlate)
         {

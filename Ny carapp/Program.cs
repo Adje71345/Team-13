@@ -64,8 +64,24 @@
 
             Console.ReadLine();
 
-            
 
+
+            // Opret flåde af køretøjer
+            FleetManager fleet = new FleetManager();
+
+            // Tilføjer forskellige typer køretøjer
+            fleet.AddVehicle(new FuelCar("Toyota", "Corolla", "AB12345", 50, 20));
+            fleet.AddVehicle(new ElectricCar("Tesla", "Model 3", "XY98765", 75, 15));
+            fleet.AddVehicle(fuelTaxi);
+            fleet.AddVehicle(electricTaxi);
+
+            // Håndter hele flåden på én gang
+            fleet.DisplayFleetStatus();
+            fleet.StartAllEngines();
+            fleet.DriveAllVehicles(100);
+            fleet.RefillAllVehicles();
+            fleet.DisplayFleetStatus();
+            fleet.StopAllEngines();
         }
 
         

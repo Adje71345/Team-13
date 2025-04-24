@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ny_carapp
 {
-    internal abstract class Car : IDrivable
+    public abstract class Car : IDrivable
     {
         public string Brand { get; set; }
         public string Model { get; set; }

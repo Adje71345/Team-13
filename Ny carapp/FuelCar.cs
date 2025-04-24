@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ny_carapp
 {
-    internal class FuelCar : Car, IEnergy
+    public class FuelCar : Car, IEnergy
     {
         public double FuelLevel { get; set; }
         public double TankCapacity { get; set; }
