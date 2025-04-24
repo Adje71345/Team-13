@@ -10,23 +10,20 @@ namespace Ny_carapp
     {
         
 
-        private IEnergy energyHandler; // komposition
+        private IEnergy energyHandler; // komposition med IEnergy interface
+
+        public double EnergyLevel => energyHandler.EnergyLevel; // getter til at få energiniveauet
+        public double MaxEnergy => energyHandler.MaxEnergy; // getter til at få maksimalt energiniveau
 
         public double StartPrice { get; set; }
         public double PricePerKm { get; set; }
         public double PricePerMinute { get; set; }
         public bool MeterStarted { get; set; }
-        public double EnergyLevel
-        {
-            get
-            {
-                return energyHandler.EnergyLevel;
-            }
-        }
-
         
 
-        public Taxi(IEnergy energyHandler, string brand, string model, string licensePlate, double startPrice, double pricePerKm, double pricePerMinute) : base(vehicle.Brand, vehicle.Model, vehicle.LicensePlate)
+        // konstruktør tager Ienergy implementation som parameter
+
+        public Taxi(string brand, string model, string licensePlate,IEnergy energyHandler, double startPrice, double pricePerKm, double pricePerMinute) : base(brand, model,licensePlate)
         {
             
             this.energyHandler = energyHandler;
@@ -75,7 +72,9 @@ namespace Ny_carapp
 
         public override bool CanDrive(double km)
         {
-            return CanDrive(km);
+            // Implementering baseret på energyHandler
+            // Logik for at afgøre om taxi har nok energy
+            return energyHandler.EnergyLevel > 0; // eller en anden betingelse
         }
 
         public void UseEnergy(double km)
