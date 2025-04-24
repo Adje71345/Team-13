@@ -8,33 +8,28 @@ namespace Ny_carapp
 {
     internal class Taxi : Car
     {
-        public Car Vehicle { get; private set; }
+        
+
+        private IEnergy energyHandler; // komposition
+
         public double StartPrice { get; set; }
         public double PricePerKm { get; set; }
         public double PricePerMinute { get; set; }
         public bool MeterStarted { get; set; }
-        public double FuelLevel
+        public double EnergyLevel
         {
             get
             {
-                if (Vehicle is FuelCar fuelCar)
-                {
-                    return fuelCar.FuelLevel;
-                }
-                else if (Vehicle is ElectricCar electricCar)
-                {
-                    return electricCar.BatteryLevel;
-                }
-                else
-                {
-                    throw new InvalidOperationException("Unknown vehicle type.");
-                }
+                return energyHandler.EnergyLevel;
             }
         }
 
-        public Taxi(Car vehicle, string brand, string model, string licensePlate, double startPrice, double pricePerKm, double pricePerMinute) : base(vehicle.Brand, vehicle.Model, vehicle.LicensePlate)
+        
+
+        public Taxi(IEnergy energyHandler, string brand, string model, string licensePlate, double startPrice, double pricePerKm, double pricePerMinute) : base(vehicle.Brand, vehicle.Model, vehicle.LicensePlate)
         {
-            Vehicle = vehicle;
+            
+            this.energyHandler = energyHandler;
             StartPrice = startPrice;
             PricePerKm = pricePerKm;
             PricePerMinute = pricePerMinute;
@@ -67,60 +62,55 @@ namespace Ny_carapp
             }
         }
 
-        public double CalculateFare(double distance, double minutes)
+        public double CalculateFare(double km, double minutes)
         {
             if (!MeterStarted)
             {
                 Console.WriteLine("The taxi meter is not running. Please start the meter first.");
                 return 0;
             }
-            double fare = StartPrice + (PricePerKm * distance) + (PricePerMinute * minutes);
+            double fare = StartPrice + (PricePerKm * km) + (PricePerMinute * minutes);
             return fare;
         }
 
-        public override bool CanDrive(double distance)
+        public override bool CanDrive(double km)
         {
-            return Vehicle.CanDrive(distance);
+            return CanDrive(km);
         }
 
-        public override void UpdateEnergyLevel(double distance)
+        public void UseEnergy(double km)
         {
-            Vehicle.UpdateEnergyLevel(distance);
+            energyHandler.UseEnergy(km);
         }
 
-        public override double CalculateConsumption(double distance)
-        {
-            return Vehicle.CalculateConsumption(distance);
-        }
+      
 
-        public override void Drive(double distance)
+        public override void Drive(double km)
         {
             if (!IsEngineOn)
             {
                 Console.WriteLine("You need to start the engine before driving.");
                 return;
             }
-            if (CanDrive(distance) == true)
+            if (CanDrive(km) == true)
             {
-                UpdateEnergyLevel(distance);
-                Odometer += (int)distance;
+                UseEnergy(km);
+                Odometer += (int)km;
             }
         }
 
-        public void Refuel(double amount)
+        public void Refill(double amount)
         {
-            if (Vehicle is FuelCar fuelCar)
-            {
-                fuelCar.Refuel(amount);
-            }
-            else if (Vehicle is ElectricCar electricCar)
-            {
-                electricCar.Charge(amount);
-            }
-            else
-            {
-                Console.WriteLine("This vehicle cannot be refueled.");
-            }
+            energyHandler.Refill(amount);
         }
+
+        
+
+        
+
+
+        
     }
 }
+    
+

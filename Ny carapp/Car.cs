@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ny_carapp
 {
-    internal abstract class Car
+    internal abstract class Car : IDrivable
     {
         public string Brand { get; set; }
         public string Model { get; set; }
@@ -48,12 +48,12 @@ namespace Ny_carapp
                 Console.WriteLine("The engine is already off.");
             }
         }
-        public abstract void Drive(double distance);
+        public abstract void Drive(double km);
 
-        public abstract bool CanDrive(double distance);
-        public abstract void UpdateEnergyLevel(double distance);
+        public abstract bool CanDrive(double km);
+        /* public abstract void UpdateEnergyLevel(double distance);
         public abstract double CalculateConsumption(double distance);
-
+        */
 
     }
 }

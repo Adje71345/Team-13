@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace Ny_carapp
 {
-    internal class ElectricCar : Car
+    internal class ElectricCar : Car, IEnergy
     {
         public double BatteryLevel { get; set; }
         public double BatteryCapacity { get; set; }
         public double KmPerKWh { get; set; }
+
+        // => returnerer værdien af BatteryLevel og BatteryCapacity (shorthand)
+        public double EnergyLevel => BatteryLevel;
+        public double MaxEnergy => BatteryCapacity;
+
+
         public ElectricCar(string brand, string model, string licensePlate, double batteryCapacity, double kmPerKWh) : base(brand, model, licensePlate)
         {
             BatteryCapacity = batteryCapacity;
@@ -18,7 +24,7 @@ namespace Ny_carapp
             BatteryLevel = 0;
         }
 
-        public void Charge(double amount)
+        public void Refill(double amount)
         {
             if (amount < 0)
             {
@@ -34,14 +40,14 @@ namespace Ny_carapp
             Console.WriteLine($"Charged {amount} kWh. Current battery level: {BatteryLevel} kWh.");
         }
         
-        public override bool CanDrive(double distance)
+        public override bool CanDrive(double km)
         {
             if (BatteryLevel <= 0)
             {
                 Console.WriteLine("You cannot drive without fuel.");
                 return false;
             }
-            double fuelNeeded = CalculateConsumption(distance);
+            double fuelNeeded = km / KmPerKWh;
             if (fuelNeeded > BatteryLevel)
             {
                 Console.WriteLine("Not enough fuel to drive this distance.");
@@ -50,9 +56,9 @@ namespace Ny_carapp
             return true;
         }
 
-        public override void UpdateEnergyLevel(double distance)
+        public void UseEnergy(double km)
         {
-            double fuelNeeded = CalculateConsumption(distance);
+            double fuelNeeded = km / KmPerKWh;
             if (fuelNeeded > BatteryLevel)
             {
                 Console.WriteLine("Not enough fuel to drive this distance.");
@@ -61,23 +67,19 @@ namespace Ny_carapp
             BatteryLevel -= fuelNeeded;
         }
 
-        public override double CalculateConsumption(double distance)
-        {
-            return distance / KmPerKWh;
-        }
 
 
-        public override void Drive(double distance)
+        public override void Drive(double km)
         {
             if (!IsEngineOn)
             {
                 Console.WriteLine("You need to start the engine before driving.");
                 return;
             }
-            if (CanDrive(distance) == true)
+            if (CanDrive(km) == true)
             {
-                UpdateEnergyLevel(distance);
-                Odometer += (int)distance;
+                UseEnergy(km);
+                Odometer += (int)km;
             }
         }
 

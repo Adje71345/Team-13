@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace Ny_carapp
 {
-    internal class FuelCar : Car
+    internal class FuelCar : Car, IEnergy
     {
-        public double FuelLevel { get; set;}
+        public double FuelLevel { get; set; }
         public double TankCapacity { get; set; }
         public double KmPerLiter { get; set; }
+
+        // => returnerer værdien af FuelLevel og TankCapacity (shorthand)
+        public double EnergyLevel => FuelLevel;
+        public double MaxEnergy => TankCapacity;
 
         public FuelCar(string brand, string model, string licensePlate, double tankCapacity, double kmPerLiter) : base(brand, model, licensePlate)
         {
@@ -18,7 +22,7 @@ namespace Ny_carapp
             KmPerLiter = kmPerLiter;
             FuelLevel = 0;
         }
-        public void Refuel (double amount)
+        public void Refill(double amount)
         {
             if (amount < 0)
             {
@@ -34,25 +38,11 @@ namespace Ny_carapp
             Console.WriteLine($"Refueled {amount} liters. Current fuel level: {FuelLevel} liters.");
         }
 
-        public override bool CanDrive(double distance)
-        {
-            if (FuelLevel <= 0)
-            {
-                Console.WriteLine("You cannot drive without fuel.");
-                return false;
-            }
-            double fuelNeeded = CalculateConsumption(distance);
-            if (fuelNeeded > FuelLevel)
-            {
-                Console.WriteLine("Not enough fuel to drive this distance.");
-                return false;
-            }
-            return true;
-        }
 
-        public override void UpdateEnergyLevel(double distance)
+
+        public void UseEnergy(double km)
         {
-            double fuelNeeded = CalculateConsumption(distance);
+            double fuelNeeded = km / KmPerLiter;
             if (fuelNeeded > FuelLevel)
             {
                 Console.WriteLine("Not enough fuel to drive this distance.");
@@ -61,24 +51,36 @@ namespace Ny_carapp
             FuelLevel -= fuelNeeded;
         }
 
-        public override double CalculateConsumption(double distance)
-        {
-            return distance / KmPerLiter;
-        }
-
-
-        public override void Drive (double distance)
+        public override void Drive(double km)
         {
             if (!IsEngineOn)
             {
                 Console.WriteLine("You need to start the engine before driving.");
                 return;
             }
-            if (CanDrive(distance) == true)
+            if (CanDrive(km) == true)
             {
-                UpdateEnergyLevel(distance);
-                Odometer += (int)distance;
-            }  
+                UseEnergy(km);
+                Odometer += (int)km;
+            }
         }
+
+        public override bool CanDrive(double km)
+        {
+            if (FuelLevel <= 0)
+            {
+                Console.WriteLine("You cannot drive without fuel.");
+                return false;
+            }
+            double fuelNeeded = km / KmPerLiter;
+            if (fuelNeeded > FuelLevel)
+            {
+                Console.WriteLine("Not enough fuel to drive this distance.");
+                return false;
+            }
+            return true;
+        }
+
+
     }
 }
