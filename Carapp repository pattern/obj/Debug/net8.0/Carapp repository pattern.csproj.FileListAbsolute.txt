@@ -1,0 +1,15 @@
+C:\Git projekter\Projekter 1. semester\Ny carapp\Team-13\Carapp repository pattern\bin\Debug\net8.0\Carapp repository pattern.exe
+C:\Git projekter\Projekter 1. semester\Ny carapp\Team-13\Carapp repository pattern\bin\Debug\net8.0\Carapp repository pattern.deps.json
+C:\Git projekter\Projekter 1. semester\Ny carapp\Team-13\Carapp repository pattern\bin\Debug\net8.0\Carapp repository pattern.runtimeconfig.json
+C:\Git projekter\Projekter 1. semester\Ny carapp\Team-13\Carapp repository pattern\bin\Debug\net8.0\Carapp repository pattern.dll
+C:\Git projekter\Projekter 1. semester\Ny carapp\Team-13\Carapp repository pattern\bin\Debug\net8.0\Carapp repository pattern.pdb
+C:\Git projekter\Projekter 1. semester\Ny carapp\Team-13\Carapp repository pattern\obj\Debug\net8.0\Carapp repository pattern.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git projekter\Projekter 1. semester\Ny carapp\Team-13\Carapp repository pattern\obj\Debug\net8.0\Carapp repository pattern.AssemblyInfoInputs.cache
+C:\Git projekter\Projekter 1. semester\Ny carapp\Team-13\Carapp repository pattern\obj\Debug\net8.0\Carapp repository pattern.AssemblyInfo.cs
+C:\Git projekter\Projekter 1. semester\Ny carapp\Team-13\Carapp repository pattern\obj\Debug\net8.0\Carapp repository pattern.csproj.CoreCompileInputs.cache
+C:\Git projekter\Projekter 1. semester\Ny carapp\Team-13\Carapp repository pattern\obj\Debug\net8.0\Carapp repository pattern.sourcelink.json
+C:\Git projekter\Projekter 1. semester\Ny carapp\Team-13\Carapp repository pattern\obj\Debug\net8.0\Carapp repository pattern.dll
+C:\Git projekter\Projekter 1. semester\Ny carapp\Team-13\Carapp repository pattern\obj\Debug\net8.0\refint\Carapp repository pattern.dll
+C:\Git projekter\Projekter 1. semester\Ny carapp\Team-13\Carapp repository pattern\obj\Debug\net8.0\Carapp repository pattern.pdb
+C:\Git projekter\Projekter 1. semester\Ny carapp\Team-13\Carapp repository pattern\obj\Debug\net8.0\Carapp repository pattern.genruntimeconfig.cache
+C:\Git projekter\Projekter 1. semester\Ny carapp\Team-13\Carapp repository pattern\obj\Debug\net8.0\ref\Carapp repository pattern.dll

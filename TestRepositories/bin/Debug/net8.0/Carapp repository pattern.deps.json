@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Carapp repository pattern/1.0.0": {
+        "runtime": {
+          "Carapp repository pattern.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Carapp repository pattern/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

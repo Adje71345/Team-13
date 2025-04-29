@@ -1,0 +1,171 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Carapp repository pattern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D59AECE-6CC5-4CEB-98A8-785A7719D52A}|..\\TestRepositories\\TestRepositories.csproj|c:\\git projekter\\projekter 1. semester\\ny carapp\\team-13\\testrepositories\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8FF4435-9C38-4845-BAB2-53C71EE07D20}|Carapp repository pattern.csproj|c:\\git projekter\\projekter 1. semester\\ny carapp\\team-13\\carapp repository pattern\\filetriprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8FF4435-9C38-4845-BAB2-53C71EE07D20}|Carapp repository pattern.csproj|solutionrelative:filetriprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8FF4435-9C38-4845-BAB2-53C71EE07D20}|Carapp repository pattern.csproj|c:\\git projekter\\projekter 1. semester\\ny carapp\\team-13\\carapp repository pattern\\filecarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8FF4435-9C38-4845-BAB2-53C71EE07D20}|Carapp repository pattern.csproj|solutionrelative:filecarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8FF4435-9C38-4845-BAB2-53C71EE07D20}|Carapp repository pattern.csproj|c:\\git projekter\\projekter 1. semester\\ny carapp\\team-13\\carapp repository pattern\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8FF4435-9C38-4845-BAB2-53C71EE07D20}|Carapp repository pattern.csproj|solutionrelative:trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8FF4435-9C38-4845-BAB2-53C71EE07D20}|Carapp repository pattern.csproj|c:\\git projekter\\projekter 1. semester\\ny carapp\\team-13\\carapp repository pattern\\itriprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8FF4435-9C38-4845-BAB2-53C71EE07D20}|Carapp repository pattern.csproj|solutionrelative:itriprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8FF4435-9C38-4845-BAB2-53C71EE07D20}|Carapp repository pattern.csproj|c:\\git projekter\\projekter 1. semester\\ny carapp\\team-13\\carapp repository pattern\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8FF4435-9C38-4845-BAB2-53C71EE07D20}|Carapp repository pattern.csproj|solutionrelative:car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8FF4435-9C38-4845-BAB2-53C71EE07D20}|Carapp repository pattern.csproj|c:\\git projekter\\projekter 1. semester\\ny carapp\\team-13\\carapp repository pattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8FF4435-9C38-4845-BAB2-53C71EE07D20}|Carapp repository pattern.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D59AECE-6CC5-4CEB-98A8-785A7719D52A}|..\\TestRepositories\\TestRepositories.csproj|c:\\git projekter\\projekter 1. semester\\ny carapp\\team-13\\testrepositories\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8FF4435-9C38-4845-BAB2-53C71EE07D20}|Carapp repository pattern.csproj|c:\\git projekter\\projekter 1. semester\\ny carapp\\team-13\\carapp repository pattern\\icarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8FF4435-9C38-4845-BAB2-53C71EE07D20}|Carapp repository pattern.csproj|solutionrelative:icarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Test1.cs",
+              "DocumentMoniker": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\TestRepositories\\Test1.cs",
+              "RelativeDocumentMoniker": "..\\TestRepositories\\Test1.cs",
+              "ToolTip": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\TestRepositories\\Test1.cs",
+              "RelativeToolTip": "..\\TestRepositories\\Test1.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAAEEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:48:22.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MSTestSettings.cs",
+              "DocumentMoniker": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\TestRepositories\\MSTestSettings.cs",
+              "RelativeDocumentMoniker": "..\\TestRepositories\\MSTestSettings.cs",
+              "ToolTip": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\TestRepositories\\MSTestSettings.cs",
+              "RelativeToolTip": "..\\TestRepositories\\MSTestSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:48:17.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileTripRepository.cs",
+              "DocumentMoniker": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Carapp repository pattern\\FileTripRepository.cs",
+              "RelativeDocumentMoniker": "FileTripRepository.cs",
+              "ToolTip": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Carapp repository pattern\\FileTripRepository.cs",
+              "RelativeToolTip": "FileTripRepository.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwDYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T08:58:47.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITripRepository.cs",
+              "DocumentMoniker": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Carapp repository pattern\\ITripRepository.cs",
+              "RelativeDocumentMoniker": "ITripRepository.cs",
+              "ToolTip": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Carapp repository pattern\\ITripRepository.cs",
+              "RelativeToolTip": "ITripRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T08:56:43.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileCarRepository.cs",
+              "DocumentMoniker": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Carapp repository pattern\\FileCarRepository.cs",
+              "RelativeDocumentMoniker": "FileCarRepository.cs",
+              "ToolTip": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Carapp repository pattern\\FileCarRepository.cs",
+              "RelativeToolTip": "FileCarRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T08:46:38.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ICarRepository.cs",
+              "DocumentMoniker": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Carapp repository pattern\\ICarRepository.cs",
+              "RelativeDocumentMoniker": "ICarRepository.cs",
+              "ToolTip": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Carapp repository pattern\\ICarRepository.cs",
+              "RelativeToolTip": "ICarRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T08:42:29.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Trip.cs",
+              "DocumentMoniker": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Carapp repository pattern\\Trip.cs",
+              "RelativeDocumentMoniker": "Trip.cs",
+              "ToolTip": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Carapp repository pattern\\Trip.cs",
+              "RelativeToolTip": "Trip.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T08:38:41.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Carapp repository pattern\\Car.cs",
+              "RelativeDocumentMoniker": "Car.cs",
+              "ToolTip": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Carapp repository pattern\\Car.cs",
+              "RelativeToolTip": "Car.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA4wB8AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T08:31:15.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Carapp repository pattern\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Git projekter\\Projekter 1. semester\\Ny carapp\\Team-13\\Carapp repository pattern\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T08:30:05.182Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
